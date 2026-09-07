@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # 🎵 JANTİ Leak — CTF Challenge
 
 ---
@@ -58,4 +57,3 @@ docker-compose down
 ### 🚩 Bayraklar (Flags)
 * **Toplam Bayrak Sayısı:** 2 Adet
 * **Format:** TUGA{...}
-EOF
