@@ -1,0 +1,25 @@
+cat << 'EOF' > lab.yml
+# ── TÜGA CTF Laboratuvarı — meta dosyası ──────────────────────────────
+# Bu dosya katalog sitesinin tek doğruluk kaynağıdır. Her PR'da doldurulur.
+# Zorunlu alanlar: slug, baslik, alan, zorluk, yazar, senaryo, zafiyetler(≥2), flaglar(≥2), port
+slug: janti-leak                 # klasör adıyla AYNI olmalı
+baslik: "JANTİ: Korsan Pre-Master Sızıntısı"
+alan: "Adli Bilişim"             # Web | Ağ | OSINT | Binary/Pwn | Tersine Mühendislik | Kripto | Adli Bilişim | AI Güvenliği | Diğer
+zorluk: Kolay                     # Kolay | Orta | Zor
+yazar: SidikaEtci                # GitHub kullanıcı adın
+senaryo: >
+  Yeni müzik grubu JANTİ'nin kariyer parçası, resmi çıkışına sadece 3 gün kala 
+  korsan müzik portalı Spotifly'a sızdırıldı. Şüpheler rakip grubun bilgisayar 
+  mühendisine çevrildi. Sızdırılan ses dalgalarındaki izleri takip edin, gizli 
+  kulis sayfasına sızın ve elde edilen fotoğrafın adli analizini yaparak sabotajcıyı ifşa edin.
+zafiyetler:                      # en az 2 FARKLI zafiyet
+  - "Audio Spectrogram Steganography (Ses Dalgalarında Frekans Gizleme)"
+  - "Image EXIF / Metadata Forensics (Görsel Katmanında Adli Bilişim İzi)"
+flaglar:                         # en az 2 flag; SADECE sha256 hash yazılır, düz metin ASLA
+  - ipucu: "İnsan kulağının duyamadığı üst frekanslarda gizlenmiş bir rota ve imza olabilir mi?"
+    sha256: "670b13d640236aeeff4334c9c72eefbcfe1bfe26be86be3d00160faad2343997"
+  - ipucu: "Kulis sayfasındaki güvenlik kamerası fotoğrafının pikselleri dışındaki alanlara baktın mı?"
+    sha256: "ef2c6e696328328dc8f20b3ea94e773ae6759c99ea9405d5440d9df8bc4fb943"
+port: 5000                       # docker compose ile açılan ana port (http://localhost:PORT)
+etiketler: [steganography, forensics, audio, exif, flask]
+EOF

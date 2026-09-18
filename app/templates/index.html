@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotifly - JANTİ Leak Station</title>
+    <title>Spotifly - JANTİ Sızıntı İstasyonu</title>
     <style>
         * {
             box-sizing: border-box;
@@ -86,12 +86,12 @@
         
         <audio controls>
             <source src="{{ url_for('static', filename=track.audio_file) }}" type="audio/wav">
-            Your browser does not support the audio tag.
+            Tarayıcınız ses etiketini (audio tag) desteklemiyor.
         </audio>
 
-        <a href="/download/audio" class="btn-download">Download Audio (FLAC/WAV Master)</a>
+        <a href="/download/audio" class="btn-download">Sesi İndir (FLAC/WAV Master)</a>
 
-        <div class="hint-text">Forensics Warning: Unreleased pre-master track leaked from unknown studio session.</div>
+        <div class="hint-text">Adli Bilişim Uyarısı: Bilinmeyen bir stüdyo seansından sızdırılmış yayınlanmamış pre-master kayıt.</div>
     </div>
 </body>
 </html>
