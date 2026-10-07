@@ -72,5 +72,5 @@ def generate_spectrogram_audio(text: str, output_path: str = "app/static/audio/j
     print(f"[+] 10-second audio successfully generated at: {output_path}")
 
 if __name__ == "__main__":
-    payload_message = "TUGA{4ud10_sp3ctr0gr4m_j4nt1_l34k} | ROUTE: /backstage-feed"
+    payload_message = "TUGA{s3s_sp3ktrum_j4nt1_s1zintisi} | ROTA: /haberler"
     generate_spectrogram_audio(payload_message)
